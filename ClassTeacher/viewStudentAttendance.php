@@ -130,7 +130,7 @@ include '../Includes/session.php';
               <div class="col-lg-12">
               <div class="card mb-4">
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                  <h6 class="m-0 font-weight-bold text-primary">Class Attendance</h6>
+                  <h6 class="m-0 font-weight-bold text-primary">Attendance</h6>
                 </div>
                 <div class="table-responsive p-3">
                   <table class="table align-items-center table-flush table-hover" id="dataTableHover">
@@ -141,7 +141,7 @@ include '../Includes/session.php';
                         <th>Last Name</th>
                         <th>Other Name</th>
                         <th>Admission No</th>
-                        <th>Class</th>
+                        <th>Department</th>
                         <th>Course</th>
                         <th>Session</th>
                         <th>Term</th>

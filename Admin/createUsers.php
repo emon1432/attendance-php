@@ -31,7 +31,7 @@ include '../Includes/session.php';
   <meta name="description" content="">
   <meta name="author" content="">
   <link href="../img/logo/attnlg.jpg" rel="icon">
-  <title>COBIS - Dashboard</title>
+  <title>NU - Dashboard</title>
   <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="css/ruang-admin.min.css" rel="stylesheet">
@@ -98,11 +98,11 @@ function displayCompany(str) {
                   <form method="post" action="scripts/saveUsers.php">
                    <div class="form-group row mb-3">
                         <div class="col-xl-6">
-                            <label class="form-control-label">FirstName<span class="text-danger ml-2">*</span></label>
+                            <label class="form-control-label">First Name<span class="text-danger ml-2">*</span></label>
                       <input type="text" class="form-control" name="firstName" id="exampleInputFirstName" placeholder="First Name">
                         </div>
                         <div class="col-xl-6">
-                            <label class="form-control-label">LastName<span class="text-danger ml-2">*</span></label>
+                            <label class="form-control-label">Last Name<span class="text-danger ml-2">*</span></label>
                       <input type="textarea" class="form-control" name="lastName" id="exampleInputFirstName" placeholder="Last Name">
                         </div>
                     </div>

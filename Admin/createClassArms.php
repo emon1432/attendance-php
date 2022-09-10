@@ -145,14 +145,14 @@ if(isset($_POST['save'])){
                   <form method="post">
                     <div class="form-group row mb-3">
                         <div class="col-xl-6">
-                        <label class="form-control-label">Select Class<span class="text-danger ml-2">*</span></label>
+                        <label class="form-control-label">Select Department<span class="text-danger ml-2">*</span></label>
                          <?php
                         $qry= "SELECT * FROM tblclass ORDER BY className ASC";
                         $result = $conn->query($qry);
                         $num = $result->num_rows;		
                         if ($num > 0){
                           echo ' <select required name="classId" class="form-control mb-3">';
-                          echo'<option value="">--Select Class--</option>';
+                          echo'<option value="">--Select Department--</option>';
                           while ($rows = $result->fetch_assoc()){
                           echo'<option value="'.$rows['Id'].'" >'.$rows['className'].'</option>';
                               }
@@ -194,7 +194,7 @@ if(isset($_POST['save'])){
                     <thead class="thead-light">
                       <tr>
                         <th>#</th>
-                        <th>Class Name</th>
+                        <th>Department Name</th>
                         <th>Course Name</th>
                          <th>Status</th>
                         <th>Edit</th>

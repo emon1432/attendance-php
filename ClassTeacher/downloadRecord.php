@@ -12,7 +12,7 @@ include '../Includes/session.php';
             <th>Last Name</th>
             <th>Other Name</th>
             <th>Admission No</th>
-            <th>Class</th>
+            <th>Department</th>
             <th>Course</th>
             <th>Session</th>
             <th>Term</th>

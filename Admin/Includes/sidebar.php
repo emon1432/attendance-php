@@ -3,7 +3,7 @@
         <div class="sidebar-brand-icon" >
           <img src="img/logo/attnlg.jpg">
         </div>
-        <div class="sidebar-brand-text mx-3">AMS</div>
+        <div class="sidebar-brand-text mx-3">National University</div>
       </a>
       <hr class="sidebar-divider my-0">
       <li class="nav-item active">
@@ -13,18 +13,18 @@
       </li>
       <hr class="sidebar-divider">
       <div class="sidebar-heading">
-        Class And Course
+        Dept. And Course
       </div>
       <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseBootstrap"
           aria-expanded="true" aria-controls="collapseBootstrap">
           <i class="fas fa-chalkboard"></i>
-          <span>Manage Classes</span>
+          <span>Manage Department</span>
         </a>
         <div id="collapseBootstrap" class="collapse" aria-labelledby="headingBootstrap" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">Manage Classes</h6>
-            <a class="collapse-item" href="createClass.php">Create Class</a>
+            <h6 class="collapse-header">Manage Department</h6>
+            <a class="collapse-item" href="createClass.php">Create Department</a>
             <!-- <a class="collapse-item" href="#">Member List</a> -->
           </div>
         </div>
