@@ -185,16 +185,16 @@ if (isset($_GET['Id']) && isset($_GET['action']) && $_GET['action'] == "delete")
                       </div>
                     </div>
                     <div class="form-group row mb-3">
-                      <div class="col-xl-6">
+                      <!-- <div class="col-xl-6">
                         <label class="form-control-label">Other Name<span class="text-danger ml-2">*</span></label>
                         <input type="text" class="form-control" name="otherName" value="<?php echo $row['otherName']; ?>" id="exampleInputFirstName">
-                      </div>
+                      </div> -->
                       <div class="col-xl-6">
                         <label class="form-control-label">Roll Number<span class="text-danger ml-2">*</span></label>
                         <input type="text" class="form-control" required name="admissionNumber" value="<?php echo $row['admissionNumber']; ?>" id="exampleInputFirstName">
                       </div>
-                    </div>
-                    <div class="form-group row mb-3">
+                      <!-- </div>
+                    <div class="form-group row mb-3"> -->
                       <div class="col-xl-6">
                         <label class="form-control-label">Select Department<span class="text-danger ml-2">*</span></label>
                         <?php
@@ -211,12 +211,12 @@ if (isset($_GET['Id']) && isset($_GET['action']) && $_GET['action'] == "delete")
                         }
                         ?>
                       </div>
-                      <div class="col-xl-6">
+                      <!-- <div class="col-xl-6">
                         <label class="form-control-label">Courses<span class="text-danger ml-2">*</span></label>
                         <?php
                         echo "<div id='txtHint'></div>";
                         ?>
-                      </div>
+                      </div> -->
                     </div>
                     <?php
                     if (isset($Id)) {
@@ -248,10 +248,8 @@ if (isset($_GET['Id']) && isset($_GET['action']) && $_GET['action'] == "delete")
                             <th>#</th>
                             <th>First Name</th>
                             <th>Last Name</th>
-                            <th>Other Name</th>
-                            <th>Admission No</th>
+                            <th>Roll No</th>
                             <th>Department</th>
-                            <th>Course</th>
                             <th>Date Created</th>
                             <th>Edit</th>
                             <th>Delete</th>
@@ -261,13 +259,13 @@ if (isset($_GET['Id']) && isset($_GET['action']) && $_GET['action'] == "delete")
                         <tbody>
 
                           <?php
-                          $query = "SELECT tblstudents.Id,tblclass.className,tblclassarms.classArmName,tblclassarms.Id AS classArmId,tblstudents.firstName,
-                      tblstudents.lastName,tblstudents.otherName,tblstudents.admissionNumber,tblstudents.dateCreated
+                          $query = "SELECT tblstudents.Id,tblclass.className,tblstudents.firstName,
+                      tblstudents.lastName,tblstudents.admissionNumber,tblstudents.dateCreated
                       FROM tblstudents
-                      INNER JOIN tblclass ON tblclass.Id = tblstudents.classId
-                      INNER JOIN tblclassarms ON tblclassarms.Id = tblstudents.classArmId";
+                      INNER JOIN tblclass ON tblclass.Id = tblstudents.classId";
                           $rs = $conn->query($query);
                           $num = $rs->num_rows;
+                          echo $num;
                           $sn = 0;
                           $status = "";
                           if ($num > 0) {
@@ -278,10 +276,8 @@ if (isset($_GET['Id']) && isset($_GET['action']) && $_GET['action'] == "delete")
                                 <td>" . $sn . "</td>
                                 <td>" . $rows['firstName'] . "</td>
                                 <td>" . $rows['lastName'] . "</td>
-                                <td>" . $rows['otherName'] . "</td>
                                 <td>" . $rows['admissionNumber'] . "</td>
                                 <td>" . $rows['className'] . "</td>
-                                <td>" . $rows['classArmName'] . "</td>
                                  <td>" . $rows['dateCreated'] . "</td>
                                 <td><a href='?action=edit&Id=" . $rows['Id'] . "'><i class='fas fa-fw fa-edit'></i></a></td>
                                 <td><a href='?action=delete&Id=" . $rows['Id'] . "'><i class='fas fa-fw fa-trash'></i></a></td>

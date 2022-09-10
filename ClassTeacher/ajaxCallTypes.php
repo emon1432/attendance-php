@@ -31,6 +31,3 @@ include '../Includes/dbcon.php';
 
 
     }
-        
-?>
-

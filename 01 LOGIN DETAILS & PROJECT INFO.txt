@@ -1,21 +1,34 @@
-**Log on to codeastro.com for more projects!***
+How to setup this project in your local machine?
+It's very simple and fun. Just follow the steps below:  
 
-**Database Name: attendancemsystem**
+1. Download this zip file.
+2. Extract the zip file.
+3. Copy this folder .
+4. Go to C drive then open XAMPP folder. (if you don't have XAMPP installed in your machine, then install it first).
+5. Paste the folder in htdocs folder.
+6. Open XAMPP control panel and start Apache and MySQL.
+7. Open your browser and type localhost/phpmyadmin.
+8. Create a database named "attendancemsystem".
+9. Import the database file from the "DATABASE FILE" folder.
+10. Open your browser and type localhost/attendancemsystem.
 
-**Developed by Sodiq Ahmed**
+11. To login as admin use this =>
+        email : admin@gmail.com
+        password : 12345678
 
-**Recommended PHP Version 5.6 and Newer**
+12. To login as teacher use this =>
+        email : lutfihabiba@gmail.com
+        password : 12345678
+    Or
+        email : tasmitoma@gmail.com
+        password : 12345678
 
+13. Enjoy it.
 
-**Admin Login Details**
-
-Email   : admin@mail.com
-Password: Password@123
-
-
-**Teacher Login Details**
-
-Email   : jwood@mail.com
-Password: pass123
-
-**Default password for teacher's account: pass123**
+Developed By:
+        Md Khairul Islam Emon
+        Web Developer & Programmer & Mobile App Developer at HSBLCO Solution LTD.
+        Email : mdkhairulislamemon1432@gmail.com
+        github : github.com/emon1432
+        facebook : facebook.com/e.mon14321
+        phone : 01638849305

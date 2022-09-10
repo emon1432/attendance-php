@@ -1,5 +1,4 @@
-
-<?php 
+<?php
 include 'Includes/dbcon.php';
 session_start();
 ?>
@@ -49,19 +48,17 @@ session_start();
                       </div>
                     </div>
                     <div class="form-group">
-                        <input type="submit"  class="btn btn-primary btn-block" value="Submit" name="submit" />
+                      <input type="submit" class="btn btn-primary btn-block" value="Submit" name="submit" />
                     </div>
-                     </form>
+                  </form>
 
-                    <?php
+                  <?php
 
-              if(isset($_POST['submit'])){
-					
-                     
-				}
-			?>
+                  if (isset($_POST['submit'])) {
+                  }
+                  ?>
 
-                    <!-- <hr>
+                  <!-- <hr>
                     <a href="index.html" class="btn btn-google btn-block">
                       <i class="fab fa-google fa-fw"></i> Login with Google
                     </a>

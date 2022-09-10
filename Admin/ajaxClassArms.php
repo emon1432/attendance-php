@@ -14,5 +14,3 @@ include '../Includes/dbcon.php';
         echo'<option value="'.$row['Id'].'" >'.$row['classArmName'].'</option>';
         }
         echo '</select>';
-?>
-
